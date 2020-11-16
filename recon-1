@@ -1,0 +1,22 @@
+1)https://bgp.he.net/   ---------- to get ip address and asn numbers
+2)massscan  ----------- massscan -iL ipfile.txt -p 0-65535 --rate 10000 -n -Pn -oG outputfile.txt
+            ----------- cat outputfile.txt | grep 'Ports: 80' > http_ips.txt
+            ----------- cat outputfile.txt | grep 'Ports: 443' > https_ips.txt
+            ----------- cat outputfle.txt | grep -v 'Ports: 80' | grep -v 'Ports: 443' > not_http.txt
+            ----------- cat https_ips.txt | cut -d ' ' -f3 > https_only_ips.txt
+3)web screenshot ------------- pip install webscreenshot
+                 ------------- apt install xvfb-run , sudo apt install phantomjs(which phantomjs -- to check the directory),photon------ sudo pip3 install -r requirements.txt
+                 ------------- xvfb-run webscreenshot --no-xserver --renderer-binary /usr/bin/phantomjs -i http_only_ips.txt -p 80 -o sceenshots_80(if 443 then use -s )
+4)top port slicer github
+
+5)Shodan.io ------------- asn asnnumber(asn numbers are found in https://bgp.he.net/ )
+            ------------- copy the name and search org:"name" to get the results
+            ------------ org:"name" -p:443 -p:80
+
+
+
+
+
+reference:--
+-----------------
+https://www.youtube.com/watch?v=R_i66BnxYq0
