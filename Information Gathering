@@ -1,0 +1,26 @@
+1)robots.txt
+2)sitemap.xml
+3)https://pentest-tools.com/information-gathering/google-hacking#
+4)view page source
+5)google dorks:--
+            ------cache:owasp.org
+            ------https://www.exploit-db.com/google-hacking-database
+            ------github
+                       ----------"example.com" language:php "config_db.php"
+                       ----------"example.com" extension:config "pass"
+                       ----------"example.com" ssh language:yaml
+                       ----------"example.com" extension:sql
+                       
+ 6)test recon-1
+ 7)check for server info,programing language, and some other info -------------- wappalyzer,check error messages,check requests and responses for any server version disclosure
+                                                                  -------------- curl request for server version( curl -I https://example.com , -L for redirection)
+                                                                  
+ 8)run nessus,nikto,nmap( nmap –PN –sT –sV –p0-65535 192.168.1.100 )--->after finding ports try to connect to each port using telnet( telnet ipaddress portnumber )
+ 
+ 9)Dns Information---->dns zone transfer
+                  ---->http://dnsgoodies.com/
+                  ---->https://dnsdumpster.com/
+                  ---->
+                  
+ 10)find subdomains,entry points
+                                ------>burpsuite
