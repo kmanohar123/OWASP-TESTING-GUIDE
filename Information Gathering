@@ -44,10 +44,15 @@
                               ------->nmap ipaddress --http-waf-detect
                               ------->nmap example.com/ipaddress --script=http-waf-detect -p80,443 -v
                               ------->nmap example.com/ipaddress --script=http-waf-fingerprint -p80,443 -v
+                    ------>waf detection bypass ---->manohar---webpenteting---howtohunt
                               
   13)Checking for directories:--
                                 ------>dirsearch( python3 dirsearch.py -u http://example.com -e php,zip,aspx,env,xml,bak,conf )
                                 ------>dirbuster
                                 ------>gobuster
                                 ------>dirb
+                                
+  14)403 bypass ---- directories and files and subdomains ----------- manohar---webpenteting---howtohunt
+  
+  
 
