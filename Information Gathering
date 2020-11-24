@@ -36,6 +36,7 @@
  11)find subdomains,entry points
                                 ------>burpsuite
                                 ------>gau (git clone https://github.com/lc/gau.git)---->gau domainname.com -subs -o filename.txt
+                                ------>subfinder
                                 
  12)WAF Detection:--
                     ------>wafwoof target.com( sudo apt-get install -y wafw00f )-------->to check which waf is running
